@@ -1,5 +1,96 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#08040d"><title>N3ma Ahmed | Birthday Countdown</title><style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cairo:wght@400;600;700&display=swap');*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Cairo,sans-serif}body{min-height:100vh;color:#fff;background:radial-gradient(circle at 50% 20%,#ff699526,transparent 32%),radial-gradient(circle at 15% 85%,#cfa9561f,transparent 28%),linear-gradient(135deg,#08040d,#180b20 52%,#08040d)}#stars{position:fixed;inset:0;overflow:hidden;pointer-events:none}.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#f5d98b;opacity:.25;animation:twinkle 3s ease-in-out infinite}.wrap{min-height:100vh;display:grid;place-items:center;padding:22px;position:relative;z-index:1}.card{width:min(900px,100%);text-align:center;padding:clamp(34px,7vw,76px) 24px;border:1px solid #ffffff1c;border-radius:34px;background:#ffffff09;backdrop-filter:blur(18px);box-shadow:0 30px 100px #0006}.kicker{color:#e9c47a;font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;margin:0 0 14px}.name{font-family:'Playfair Display',serif;font-size:clamp(3.2rem,12vw,7.7rem);line-height:1.05;margin:0;background:linear-gradient(120deg,#fff,#e9c47a,#fff);-webkit-background-clip:text;color:transparent;overflow-wrap:anywhere}.rule{height:1px;width:85px;background:#e9c47a;margin:25px auto}h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,5vw,3rem);margin:0 0 12px}.subtitle{color:#cbbbc9;line-height:1.9;margin:0 auto 32px}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;direction:ltr}.unit{padding:24px 8px;border:1px solid #e9c47a30;border-radius:20px;background:#ffffff08}.number{display:block;font-family:'Playfair Display',serif;font-size:clamp(2.3rem,7vw,4.5rem);color:#fff0b5;line-height:1.1;font-variant-numeric:tabular-nums}.label{display:block;color:#b7a5b5;font-size:.72rem;letter-spacing:.1em;margin-top:9px}.date{color:#e9c47a;margin:28px 0 0;font-size:.9rem}.birthday{display:none;animation:appear 1s ease both}.birthday.active{display:block}.countdown.hidden{display:none}.heart{font-size:90px;color:#ff7195;animation:beat 1.4s infinite}.birthday p{color:#e0d1df;line-height:2}.footer{margin-top:35px;color:#827186;font-size:.68rem;letter-spacing:.12em}@media(max-width:600px){.wrap{min-height:100svh}.card{padding:38px 14px;border-radius:25px}.countdown{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.unit{padding:20px 6px}.label{font-size:.68rem}}@keyframes twinkle{0%,100%{opacity:.12;transform:scale(.6)}50%{opacity:.9;transform:scale(1.5)}}@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.13)}30%{transform:scale(1)}}@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
-</style></head><body><div id="stars"></div><main class="wrap"><section class="card"><div id="countdownBox"><p class="kicker">A special day is coming</p><h1 class="name">N3ma Ahmed</h1><div class="rule"></div><h2>Birthday Countdown 🎂</h2><p class="subtitle">A beautiful day is on its way. Let the countdown begin. ❤️</p><div class="countdown"><div class="unit"><span id="days" class="number">00</span><span class="label">DAYS</span></div><div class="unit"><span id="hours" class="number">00</span><span class="label">HOURS</span></div><div class="unit"><span id="minutes" class="number">00</span><span class="label">MINUTES</span></div><div class="unit"><span id="seconds" class="number">00</span><span class="label">SECONDS</span></div></div><p class="date">22 November 2026 • 12:00 AM</p></div><div id="birthdayBox" class="birthday"><div class="heart">♥</div><p class="kicker">THE DAY HAS ARRIVED</p><h2>Happy Birthday, N3ma Ahmed! 🎂</h2><p>Wishing you a beautiful year filled with happiness, success, laughter, and lovely memories. ❤️</p></div><div class="footer">COUNTING EVERY SECOND UNTIL YOUR DAY ✨</div></section></main><script>
-const target=new Date('2026-11-22T00:00:00+02:00').getTime();const ids={days:document.getElementById('days'),hours:document.getElementById('hours'),minutes:document.getElementById('minutes'),seconds:document.getElementById('seconds')};const countdownBox=document.getElementById('countdownBox'),birthdayBox=document.getElementById('birthdayBox');const pad=n=>String(n).padStart(2,'0');function update(){let diff=target-Date.now();if(diff<=0){countdownBox.classList.add('hidden');birthdayBox.classList.add('active');return}const days=Math.floor(diff/86400000);diff%=86400000;const hours=Math.floor(diff/3600000);diff%=3600000;const minutes=Math.floor(diff/60000);diff%=60000;const seconds=Math.floor(diff/1000);ids.days.textContent=pad(days);ids.hours.textContent=pad(hours);ids.minutes.textContent=pad(minutes);ids.seconds.textContent=pad(seconds)}for(let i=0;i<95;i++){const star=document.createElement('span');star.className='star';star.style.left=Math.random()*100+'vw';star.style.top=Math.random()*100+'vh';star.style.animationDelay=Math.random()*3+'s';star.style.animationDuration=(2+Math.random()*4)+'s';document.getElementById('stars').appendChild(star)}update();setInterval(update,1000);
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160d25">
+<title>Happy Birthday N3ma Ahmed 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#ffd98a;--pink:#ff9fc8;--cream:#fff8ee}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--cream);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 50% 0%,#59305d 0%,#24132f 42%,#100b1c 100%);overflow-x:hidden}
+#sky,.confetti-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+#sky{z-index:0}
+.star{position:absolute;width:2px;height:2px;background:#fff7d9;border-radius:50%;opacity:.65;animation:twinkle 2.5s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}
+main{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:42px 18px}
+.card{width:min(850px,100%);text-align:center;padding:clamp(28px,6vw,66px) clamp(18px,5vw,58px);border:1px solid #ffffff26;border-radius:32px;background:linear-gradient(145deg,#ffffff13,#ffffff08);box-shadow:0 25px 90px #0007,inset 0 1px #ffffff20;backdrop-filter:blur(14px);position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:-2px;background:linear-gradient(120deg,transparent 20%,#ffd98a18 50%,transparent 80%);transform:translateX(-100%);animation:shine 7s infinite}
+@keyframes shine{50%,100%{transform:translateX(100%)}}
+.content{position:relative;z-index:2}
+.eyebrow{color:var(--gold);letter-spacing:.25em;text-transform:uppercase;font-size:.72rem;font-weight:700}
+.cake{font-size:clamp(62px,11vw,100px);margin:12px 0 4px;filter:drop-shadow(0 10px 22px #ff9fc855);animation:bounce 2.5s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-12px) rotate(3deg)}}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.7rem,8vw,5.8rem);line-height:1.03;margin:10px 0 12px;background:linear-gradient(100deg,#fff4d8 10%,#ffd98a 48%,#ffadd1 85%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 12px 40px #ffb4d322}
+.subtitle{font-size:clamp(1rem,2.4vw,1.2rem);color:#f4ddea;max-width:590px;margin:0 auto;line-height:1.8}
+.divider{width:90px;height:2px;margin:27px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.message{max-width:620px;margin:0 auto;color:#fff8f0;font-size:1.03rem;line-height:1.95}
+.message strong{color:var(--gold)}
+.date{display:inline-flex;align-items:center;gap:9px;margin:26px auto 0;padding:11px 18px;border:1px solid #ffd98a66;border-radius:999px;color:#ffe6b5;background:#ffd98a12;font-size:.9rem}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+button{border:0;border-radius:999px;padding:14px 23px;font:700 .95rem 'DM Sans',sans-serif;cursor:pointer;transition:.2s}
+button:hover{transform:translateY(-3px);filter:brightness(1.08)}
+.primary{color:#29152a;background:linear-gradient(100deg,#ffe5a9,#ffafd0);box-shadow:0 8px 24px #ffafd033}
+.secondary{color:#fff0df;background:#ffffff12;border:1px solid #ffffff38}
+.footer{margin-top:30px;color:#d9bfd4;font-size:.78rem;letter-spacing:.08em}
+.balloon{position:fixed;bottom:-140px;font-size:42px;opacity:.8;animation:floatUp linear infinite;z-index:1;pointer-events:none}
+@keyframes floatUp{to{transform:translateY(-120vh) rotate(18deg);opacity:0}}
+.confetti{position:absolute;width:9px;height:14px;top:-20px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}
+.sparkle{position:absolute;color:var(--gold);font-size:22px;animation:spin 7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:520px){main{padding:22px 13px}.card{border-radius:25px}.message{font-size:.96rem}.date{font-size:.82rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="sky"></div><div class="confetti-layer" id="confetti"></div>
+<main>
+<section class="card">
+<div class="content">
+<div class="eyebrow">Today is all about you</div>
+<div class="cake">🎂</div>
+<div class="sparkle" style="top:16%;left:12%">✦</div><div class="sparkle" style="top:26%;right:12%;animation-delay:-3s">✧</div>
+<h1>Happy Birthday<br>N3ma Ahmed!</h1>
+<p class="subtitle">A little more sparkle, a lot more happiness — today is your day! ✨</p>
+<div class="divider"></div>
+<p class="message">Wishing you a beautiful year filled with <strong>love, laughter, success</strong>, and countless moments worth remembering. May every dream bring you closer to something wonderful, and may your smile never fade. You deserve all the happiness in the world! 💗</p>
+<div class="date">🎉 &nbsp; November 22, 2026 &nbsp; 🎉</div>
+<div class="actions">
+<button class="primary" id="celebrate">🎊 Celebrate!</button>
+<button class="secondary" id="music">♫ Play birthday tune</button>
+</div>
+<div class="footer">MADE WITH ✨ AND LOTS OF LOVE</div>
+</div>
+</section>
+</main>
+<script>
+const sky=document.getElementById('sky');
+for(let i=0;i<95;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.animationDuration=(1.5+Math.random()*3)+'s';sky.appendChild(s)}
+const colors=['#ffd98a','#ff9fc8','#fff2c6','#c9a7ff','#ffffff'];
+function celebrate(){
+ const layer=document.getElementById('confetti');
+ for(let i=0;i<150;i++){const c=document.createElement('i');c.className='confetti';c.style.left=Math.random()*100+'%';c.style.background=colors[Math.floor(Math.random()*colors.length)];c.style.animationDuration=(2.5+Math.random()*3)+'s';c.style.animationDelay=Math.random()*.8+'s';c.style.transform=`rotate(${Math.random()*360}deg)`;layer.appendChild(c);setTimeout(()=>c.remove(),6500)}
+ for(let i=0;i<7;i++){const b=document.createElement('div');b.className='balloon';b.textContent=['🎈','🎈','💖','🎈'][Math.floor(Math.random()*4)];b.style.left=(5+Math.random()*90)+'%';b.style.animationDuration=(6+Math.random()*5)+'s';b.style.animationDelay=Math.random()*.7+'s';document.body.appendChild(b);setTimeout(()=>b.remove(),12000)}
+}
+document.getElementById('celebrate').addEventListener('click',celebrate);
+let audioCtx,playing=false,interval;
+document.getElementById('music').addEventListener('click',()=>{
+ const btn=document.getElementById('music');
+ if(playing){clearInterval(interval);playing=false;btn.textContent='♫ Play birthday tune';return}
+ const AudioContext=window.AudioContext||window.webkitAudioContext;
+ if(!AudioContext){btn.textContent='Music unavailable';return}
+ audioCtx=audioCtx||new AudioContext();audioCtx.resume();
+ const notes=[392,392,440,392,523,494,392,392,440,392,587,523];
+ let n=0;
+ function playNote(){if(!playing)return;const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=notes[n%notes.length];gain.gain.setValueAtTime(.0001,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(.12,audioCtx.currentTime+.03);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.32);osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.34);n++}
+ playing=true;playNote();interval=setInterval(playNote,380);btn.textContent='Ⅱ Stop music';
+});
+celebrate();
+</script>
+</body>
+</html>
